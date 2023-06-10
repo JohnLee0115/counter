@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>counter</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50pt;
+            margin-top: 200px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <div>{{session['counter']}}</div>
+
+    <div class="but">
+        <a href="/addtwo"><input type="submit" value="Add two visits!"></a>
+        <a href="/destroy_session"><input type="submit" value="Reset!"></a>
+    </div>
+</body>
+
+</html>
